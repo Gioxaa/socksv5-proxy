@@ -2,11 +2,6 @@
 
 This tutorial will guide you through the steps to use the SOCKSv5 Proxy.
 
-## Prerequisites
-
-- Basic understanding of networking concepts
-- Installed SOCKSv5 Proxy software
-
 ## Installation
 
 1. Clone the repository:
@@ -17,26 +12,22 @@ This tutorial will guide you through the steps to use the SOCKSv5 Proxy.
 
 2. Install dependencies:
     ```sh
-    npm install
+    npm install socksv5
     ```
 
 ## Usage
 
 1. Start the proxy server:
     ```sh
-    npm start
+    node index.js
     ```
 
-2. Configure your application to use the proxy:
-    - Set the proxy address to `localhost`
-    - Set the proxy port to `1080`
+2. Configure your application to use the proxy on file index.js:
+    - Set the proxy port
+    - Set the username
+    - Set the password
 
-## Testing
 
-To verify that the proxy is working, you can use a tool like `curl`:
-```sh
-curl --proxy socks5h://localhost:1080 http://example.com
-```
 
 ## Troubleshooting
 
